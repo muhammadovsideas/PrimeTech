@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-19 23:33+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: core/settings.py:127
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#: core/settings.py:128
+msgid "Russian"
+msgstr "Русский"
+
+#: core/settings.py:129
+msgid "English"
+msgstr "Английский"
+
+#: main/forms.py:20
+msgid "Mahsulot yetarli emas! Omborda faqat {} dona bor."
+msgstr "Недостаточно товара! На складе только {} штук."
+
+#: main/models.py:16
+msgid "Given by"
+msgstr "Выдано"
+
+#: main/models.py:23
+msgid "Taken by"
+msgstr "Принято"
+
+#: main/models.py:25
+msgid "Salary price"
+msgstr "Сумма зарплаты"
+
+#: main/models.py:26
+msgid "For month"
+msgstr "За месяц"
+
+#: main/models.py:27 main/models.py:39 main/models.py:59 main/models.py:80
+#: main/models.py:105 main/models.py:165
+msgid "Created at"
+msgstr "Дата создания"
+
+#: main/models.py:30
+msgid "Salary"
+msgstr "Зарплата"
+
+#: main/models.py:31
+msgid "Salaries"
+msgstr "Зарплаты"
+
+#: main/models.py:36
+msgid "Name"
+msgstr "Имя"
+
+#: main/models.py:37 users/models.py:19
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: main/models.py:38 main/models.py:58 main/models.py:73 main/models.py:103
+#: main/models.py:164 users/models.py:20
+msgid "Description"
+msgstr "Описание"
+
+#: main/models.py:44 main/models.py:171
+msgid "Created by"
+msgstr "Создано пользователем"
+
+#: main/models.py:51 main/models.py:101
+msgid "Customer"
+msgstr "Клиент"
+
+#: main/models.py:52
+msgid "Customers"
+msgstr "Клиенты"
+
+#: main/models.py:57 main/models.py:72
+msgid "Title"
+msgstr "Заголовок"
+
+#: main/models.py:60 main/models.py:81 main/models.py:104
+msgid "Updated at"
+msgstr "Дата обновления"
+
+#: main/models.py:66 main/models.py:82
+msgid "Category"
+msgstr "Категория"
+
+#: main/models.py:67
+msgid "Categories"
+msgstr "Категории"
+
+#: main/models.py:74
+msgid "Brand"
+msgstr "Бренд"
+
+#: main/models.py:75 main/models.py:166
+msgid "Price"
+msgstr "Цена"
+
+#: main/models.py:76
+msgid "Discount percentage"
+msgstr "Процент скидки"
+
+#: main/models.py:77
+msgid "Discount price"
+msgstr "Цена со скидкой"
+
+#: main/models.py:78
+msgid "Image"
+msgstr "Изображение"
+
+#: main/models.py:79
+msgid "Amount"
+msgstr "Количество"
+
+#: main/models.py:95 main/models.py:102 main/models.py:139
+msgid "Product"
+msgstr "Товар"
+
+#: main/models.py:96
+msgid "Products"
+msgstr "Товары"
+
+#: main/models.py:106 main/models.py:140
+msgid "Quantity"
+msgstr "Количество"
+
+#: main/models.py:107
+msgid "Total price"
+msgstr "Общая сумма"
+
+#: main/models.py:108
+msgid "Sale date"
+msgstr "Дата продажи"
+
+#: main/models.py:114
+msgid "Sold by"
+msgstr "Продано пользователем"
+
+#: main/models.py:123
+msgid "Not enough product in stock!"
+msgstr "Недостаточно товара на складе!"
+
+#: main/models.py:133
+msgid "Sale"
+msgstr "Продажа"
+
+#: main/models.py:134
+msgid "Sales"
+msgstr "Продажи"
+
+#: main/models.py:141
+msgid "Purchase price"
+msgstr "Цена закупки"
+
+#: main/models.py:142
+msgid "Total cost"
+msgstr "Общая стоимость"
+
+#: main/models.py:143
+msgid "Purchase date"
+msgstr "Дата закупки"
+
+#: main/models.py:158
+msgid "Purchase"
+msgstr "Закупка"
+
+#: main/models.py:159
+msgid "Purchases"
+msgstr "Закупки"
+
+#: main/models.py:175 main/models.py:178
+msgid "Expense"
+msgstr "Расход"
+
+#: main/models.py:179
+msgid "Expenses"
+msgstr "Расходы"
+
+#: main/models.py:184
+msgid "Year"
+msgstr "Год"
+
+#: main/models.py:185
+msgid "Month"
+msgstr "Месяц"
+
+#: main/models.py:186
+msgid "Total sales"
+msgstr "Общие продажи"
+
+#: main/models.py:187
+msgid "Total purchases"
+msgstr "Общие закупки"
+
+#: main/models.py:188
+msgid "Total salaries"
+msgstr "Общие зарплаты"
+
+#: main/models.py:189
+msgid "Net profit"
+msgstr "Чистая прибыль"
+
+#: main/models.py:193 main/models.py:194
+msgid "Monthly statistics"
+msgstr "Ежемесячная статистика"
+
+#: users/admin.py:20
+msgid "Personal info"
+msgstr "Личная информация"
+
+#: users/admin.py:21
+msgid "Permissions"
+msgstr "Права доступа"
+
+#: users/admin.py:26
+msgid "Important dates"
+msgstr "Важные даты"
+
+#: users/models.py:10
+msgid "Admin"
+msgstr "Админ"
+
+#: users/models.py:11
+msgid "Manager"
+msgstr "Менеджер"
+
+#: users/models.py:14
+msgid "Role"
+msgstr "Роль"
+
+#: users/models.py:26
+msgid "User"
+msgstr "Пользователь"
+
+#: users/models.py:27
+msgid "Users"
+msgstr "Пользователи"

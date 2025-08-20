@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="product-detail">
+    <div class="media">
+        {% if product.image %}
+            <img src="{{ product.image.url }}" alt="{{ product.title }}"/>
+        {% else %}
+            <div class="no-image lg">Rasm yo'q</div>
+        {% endif %}
+    </div>
+    <div class="info">
+        <h1>{{ product.title }}</h1>
+        <div class="muted chips">
+            <span class="chip">Brend: {{ product.brand }}</span>
+            {% if product.category %}<span class="chip">Kategoriya: {{ product.category.title }}</span>{% endif %}
+        </div>
+
+        <div class="price-row">
+            {% if product.discount_percentage %}
+                <span class="price-new">{{ product.discount_price }} so'm</span>
+                <span class="price-old">{{ product.price }} so'm</span>
+                <span class="badge">-{{ product.discount_percentage|floatformat:0 }}%</span>
+            {% else %}
+                <span class="price-new">{{ product.price }} so'm</span>
+            {% endif %}
+        </div>
+
+        {% if product.description %}
+            <div class="desc panel">
+                {{ product.description|linebreaksbr }}
+            </div>
+        {% endif %}
+
+        <a class="btn-primary" href="{{ telegram_buy_link }}" target="_blank" rel="noopener">Xarid qilish ↗</a>
+    </div>
+</div>
+{% endblock %}
+
+

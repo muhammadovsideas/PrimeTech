@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="carousel">
+    <div class="carousel-track" id="carouselTrack" aria-roledescription="carousel">
+        {% for p in products %}
+        <a class="carousel-item" href="{% url 'product-detail' p.id %}">
+            {% if p.image %}
+                <img src="{{ p.image.url }}" alt="{{ p.title }}"/>
+            {% else %}
+                <div class="no-image">Rasm yo'q</div>
+            {% endif %}
+            <div class="carousel-caption">
+                <div class="caption-title">{{ p.title }}</div>
+                {% if p.description %}
+                    <div class="caption-desc clamp-2">{{ p.description }}</div>
+                {% endif %}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Carousel pagination"></div>
+</div>
+
+<h2 class="page-title">Mahsulotlar</h2>
+
+<div class="grid">
+    {% for p in products %}
+        <article class="card">
+            <a href="{% url 'product-detail' p.id %}" class="card-media">
+                {% if p.image %}
+                    <img src="{{ p.image.url }}" alt="{{ p.title }}"/>
+                {% else %}
+                    <div class="no-image">Rasm yo'q</div>
+                {% endif %}
+            </a>
+            <div class="card-body">
+                <h3 class="card-title"><a href="{% url 'product-detail' p.id %}">{{ p.title }}</a></h3>
+                <div class="brand">{{ p.brand }}{% if p.category %} • {{ p.category.title }}{% endif %}</div>
+                {% if p.description %}
+                    <div class="clamp-3" style="font-size:14px;color:var(--muted);line-height:1.7">{{ p.description }}</div>
+                {% endif %}
+                <div class="price-row">
+                    {% if p.discount_percentage %}
+                        <span class="price-new">{{ p.discount_price }} so'm</span>
+                        <span class="price-old">{{ p.price }} so'm</span>
+                        <span class="badge">-{{ p.discount_percentage|floatformat:0 }}%</span>
+                    {% else %}
+                        <span class="price-new">{{ p.price }} so'm</span>
+                    {% endif %}
+                </div>
+                <a class="buy-link" href="{% url 'product-detail' p.id %}">Batafsil</a>
+            </div>
+        </article>
+    {% empty %}
+        <p>Hozircha mahsulotlar mavjud emas.</p>
+    {% endfor %}
+</div>
+{% endblock %}
+
+

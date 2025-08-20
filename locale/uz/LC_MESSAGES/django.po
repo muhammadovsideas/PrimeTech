@@ -1,0 +1,250 @@
+# O'zbekcha tarjima fayli
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-19 23:33+0500\n"
+"PO-Revision-Date: 2025-08-19 23:40+0500\n"
+"Last-Translator: Sizning ismingiz <EMAIL@ADDRESS>\n"
+"Language-Team: Uzbek\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: core/settings.py:127
+msgid "Uzbek"
+msgstr "O'zbekcha"
+
+#: core/settings.py:128
+msgid "Russian"
+msgstr "Ruscha"
+
+#: core/settings.py:129
+msgid "English"
+msgstr "Inglizcha"
+
+#: main/forms.py:20
+msgid "Mahsulot yetarli emas! Omborda faqat {} dona bor."
+msgstr "Mahsulot yetarli emas! Omborda faqat {} dona bor."
+
+#: main/models.py:16
+msgid "Given by"
+msgstr "Kim tomonidan berilgan"
+
+#: main/models.py:23
+msgid "Taken by"
+msgstr "Kim tomonidan olingan"
+
+#: main/models.py:25
+msgid "Salary price"
+msgstr "Oylik miqdori"
+
+#: main/models.py:26
+msgid "For month"
+msgstr "Oy uchun"
+
+#: main/models.py:27 main/models.py:39 main/models.py:59 main/models.py:80 main/models.py:105 main/models.py:165
+msgid "Created at"
+msgstr "Yaratilgan vaqti"
+
+#: main/models.py:30
+msgid "Salary"
+msgstr "Oylik"
+
+#: main/models.py:31
+msgid "Salaries"
+msgstr "Oyliklar"
+
+#: main/models.py:36
+msgid "Name"
+msgstr "Ism"
+
+#: main/models.py:37 users/models.py:19
+msgid "Phone number"
+msgstr "Telefon raqami"
+
+#: main/models.py:38 main/models.py:58 main/models.py:73 main/models.py:103 main/models.py:164 users/models.py:20
+msgid "Description"
+msgstr "Izoh"
+
+#: main/models.py:44 main/models.py:171
+msgid "Created by"
+msgstr "Kim tomonidan yaratilgan"
+
+#: main/models.py:51 main/models.py:101
+msgid "Customer"
+msgstr "Mijoz"
+
+#: main/models.py:52
+msgid "Customers"
+msgstr "Mijozlar"
+
+#: main/models.py:57 main/models.py:72
+msgid "Title"
+msgstr "Sarlavha"
+
+#: main/models.py:60 main/models.py:81 main/models.py:104
+msgid "Updated at"
+msgstr "Yangilangan vaqti"
+
+#: main/models.py:66 main/models.py:82
+msgid "Category"
+msgstr "Kategoriya"
+
+#: main/models.py:67
+msgid "Categories"
+msgstr "Kategoriyalar"
+
+#: main/models.py:74
+msgid "Brand"
+msgstr "Brend"
+
+#: main/models.py:75 main/models.py:166
+msgid "Price"
+msgstr "Narx"
+
+#: main/models.py:76
+msgid "Discount percentage"
+msgstr "Chegirma foizi"
+
+#: main/models.py:77
+msgid "Discount price"
+msgstr "Chegirmali narx"
+
+#: main/models.py:78
+msgid "Image"
+msgstr "Rasm"
+
+#: main/models.py:79
+msgid "Amount"
+msgstr "Miqdor"
+
+#: main/models.py:95 main/models.py:102 main/models.py:139
+msgid "Product"
+msgstr "Mahsulot"
+
+#: main/models.py:96
+msgid "Products"
+msgstr "Mahsulotlar"
+
+#: main/models.py:106 main/models.py:140
+msgid "Quantity"
+msgstr "Soni"
+
+#: main/models.py:107
+msgid "Total price"
+msgstr "Umumiy narx"
+
+#: main/models.py:108
+msgid "Sale date"
+msgstr "Sotilgan sana"
+
+#: main/models.py:114
+msgid "Sold by"
+msgstr "Kim tomonidan sotilgan"
+
+#: main/models.py:123
+msgid "Not enough product in stock!"
+msgstr "Omborda yetarli mahsulot yo‘q!"
+
+#: main/models.py:133
+msgid "Sale"
+msgstr "Sotuv"
+
+#: main/models.py:134
+msgid "Sales"
+msgstr "Sotuvlar"
+
+#: main/models.py:141
+msgid "Purchase price"
+msgstr "Xarid narxi"
+
+#: main/models.py:142
+msgid "Total cost"
+msgstr "Umumiy xarajat"
+
+#: main/models.py:143
+msgid "Purchase date"
+msgstr "Xarid sanasi"
+
+#: main/models.py:158
+msgid "Purchase"
+msgstr "Xarid"
+
+#: main/models.py:159
+msgid "Purchases"
+msgstr "Xaridlar"
+
+#: main/models.py:175 main/models.py:178
+msgid "Expense"
+msgstr "Xarajat"
+
+#: main/models.py:179
+msgid "Expenses"
+msgstr "Xarajatlar"
+
+#: main/models.py:184
+msgid "Year"
+msgstr "Yil"
+
+#: main/models.py:185
+msgid "Month"
+msgstr "Oy"
+
+#: main/models.py:186
+msgid "Total sales"
+msgstr "Umumiy sotuvlar"
+
+#: main/models.py:187
+msgid "Total purchases"
+msgstr "Umumiy xaridlar"
+
+#: main/models.py:188
+msgid "Total salaries"
+msgstr "Umumiy oyliklar"
+
+#: main/models.py:189
+msgid "Net profit"
+msgstr "Sof foyda"
+
+#: main/models.py:193 main/models.py:194
+msgid "Monthly statistics"
+msgstr "Oylik statistika"
+
+#: users/admin.py:20
+msgid "Personal info"
+msgstr "Shaxsiy ma’lumotlar"
+
+#: users/admin.py:21
+msgid "Permissions"
+msgstr "Ruxsatlar"
+
+#: users/admin.py:26
+msgid "Important dates"
+msgstr "Muhim sanalar"
+
+#: users/models.py:10
+msgid "Admin"
+msgstr "Admin"
+
+#: users/models.py:11
+msgid "Manager"
+msgstr "Menejer"
+
+#: users/models.py:14
+msgid "Role"
+msgstr "Roli"
+
+#: users/models.py:26
+msgid "User"
+msgstr "Foydalanuvchi"
+
+#: users/models.py:27
+msgid "Users"
+msgstr "Foydalanuvchilar"

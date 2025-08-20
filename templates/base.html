@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uz" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTech</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" href="{% static 'img/logo.png' %}">
+</head>
+<body>
+<header class="navbar">
+    <a class="brand" href="{% url 'home' %}">
+        <img src="{% static 'img/photo_2025-06-12_20-51-53.jpg' %}" onerror="this.onerror=null;this.src='{% static 'img/logo.png' %}'" alt="PrimeTech" class="logo">
+    </a>
+
+    <form class="search-bar" action="{% url 'home' %}" method="get" role="search" aria-label="Sayt bo'ylab qidirish">
+        <div class="search-input">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 4a6 6 0 104.472 10.06l4.734 4.734a1 1 0 001.414-1.415l-4.734-4.734A6 6 0 0010 4zm-4 6a4 4 0 118.001-.001A4 4 0 016 10z"/></svg>
+            <input type="text" name="q" value="{{ qs.q }}" placeholder="Qidirish"/>
+        </div>
+    </form>
+
+    <button id="hamburgerBtn" class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<div id="backdrop" class="backdrop" hidden></div>
+<aside id="drawer" class="drawer" aria-hidden="true" aria-modal="true" role="dialog">
+    <div class="drawer-header">
+        <span>Menu</span>
+        <button id="drawerClose" aria-label="Yopish">✕</button>
+    </div>
+    <nav class="drawer-links">
+        <a href="{% url 'home' %}">Bosh sahifa</a>
+        <a href="tel:+998912830912">
+            <span class="icon">☎</span>
+            Support: +998 91 283 09 12
+        </a>
+        <a href="https://t.me/PrimeTechUz" target="_blank" rel="noopener" aria-label="Telegram channel">
+            <svg class="icon brand-telegram" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9.3 14.7l-.3 4.3c.4 0 .6-.2.8-.4l2-1.9 4.1 3c.8.5 1.4.2 1.6-.7l2.9-13.6v-.1c.3-1.2-.4-1.7-1.2-1.4L2.6 9.7c-1.2.5-1.2 1.2-.2 1.5l4.1 1.3 9.4-5.9c.4-.3.9-.1.5.2z"/></svg>
+            Telegram kanal
+        </a>
+        <a href="https://instagram.com/primetechuz" target="_blank" rel="noopener" aria-label="Instagram channel">
+            <svg class="icon brand-instagram" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 4a5 5 0 110 10 5 5 0 010-10zm6.5-2a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/></svg>
+            Instagram
+        </a>
+        <fieldset class="drawer-theme">
+            <legend>Mavzu</legend>
+            <label><input type="radio" name="theme" value="light"> Light</label>
+            <label><input type="radio" name="theme" value="dark"> Dark</label>
+            <label><input type="radio" name="theme" value="system"> System</label>
+        </fieldset>
+
+        <form class="drawer-filters" action="{% url 'home' %}" method="get">
+            <fieldset>
+                <legend>Filterlar</legend>
+                <label>
+                    Kategoriya
+                    <select name="category">
+                        <option value="">Barchasi</option>
+                        {% for c in categories %}
+                            <option value="{{ c.id }}" {% if qs.category == c.id|stringformat:'s' %}selected{% endif %}>{{ c.title }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+                <label>
+                    Brend
+                    <select name="brand">
+                        <option value="">Barchasi</option>
+                        {% for b in brands %}
+                            <option value="{{ b }}" {% if qs.brand == b %}selected{% endif %}>{{ b }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+                <div class="price-inputs">
+                    <label>Min narx <input type="number" name="min" value="{{ qs.min }}" inputmode="numeric" min="0"></label>
+                    <label>Max narx <input type="number" name="max" value="{{ qs.max }}" inputmode="numeric" min="0"></label>
+                </div>
+                <div class="filter-actions">
+                    <button type="submit" class="btn-primary">Qo'llash</button>
+                    <a href="{% url 'home' %}" class="btn-reset">Tozalash</a>
+                </div>
+            </fieldset>
+        </form>
+    </nav>
+</aside>
+
+<main class="container">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer" id="contact">
+
+    <div id="about">© {% now 'Y' %} The Future Is Yours</div>
+    <script src="{% static 'js/app.js' %}" defer></script>
+</footer>
+</body>
+</html>
+
+
